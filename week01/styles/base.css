@@ -1,0 +1,117 @@
+/* styles/layout.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Navigation */
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    list-style: none;
+    padding: 0.5rem 0;
+    background-color: #444;
+  }
+  
+  nav ul li {
+    color: white;
+    cursor: pointer;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Main Layout */
+  main {
+    display: flex;
+    padding: 1rem;
+    min-height: 400px;
+    max-width: 80%;
+    align-content: center;
+    margin: 0 auto;
+  }
+  
+  /* Main content area (75%) */
+  main > :not(aside) {
+    flex: 3;
+    padding-right: 1rem;
+  }
+  
+  /* Aside (25%) */
+  aside {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-left: 1px solid #ccc;
+  }
+
+  aside ul {
+  }
+
+  aside ul li {
+    text-align: center;
+    list-style: none;
+    margin-top: 10px;
+  }
+
+  aside ul li a {
+    color: black;
+    cursor: pointer;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .card {
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .CardContainer {
+    display: grid;
+    justify-content: space-between;
+  }
+
+  .infoContainer {
+    margin: 10px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
