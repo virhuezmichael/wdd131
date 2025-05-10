@@ -16,7 +16,7 @@
         align-items: center;
     }
 
-    header p {
+    header h1 {
         font-size: 1.5rem;
         width: 40%;
         text-align: center;
@@ -39,8 +39,8 @@
       color: white;
     }
 
-    nav ul.menu li:hover {
-        color: rgb(159, 159, 162);
+    a:hover {
+        color: rgb(199, 199, 203);
         cursor: pointer;
     }
 
