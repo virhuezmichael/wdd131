@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Virhuez">
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Michael Virhuez - week03 - Country page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+    <title>WDD131 - Dynamic Web Fundamentals - Michael Virhuez - week03 - Country Page</title>
+</head>
+<body>
+    <header>
+        <h1>Bocas del Toro, Panama</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/Panama-3.webp" media="(min-width: 1000px)">
+                <source srcset="images/Panama-2.webp" media="(min-width: 550px)">
+                <img src="images/Panama-1.webp" alt="Panama, Bocas del Toro image" width="400" height="200">
+            </picture>
+            <article class="data">
+                <h2>Data</h2>
+                <div class="card">
+                <p class="label">Area:</p>
+                <p class="value">4,643.9 km²</p>
+                <p class="label">Population:</p>
+                <p class="value">159,228</p>
+                <p class="label">Capital:</p>
+                <p class="value">Bocas del Toro</p>
+                <p class="label">Languages:</p>
+                <p class="value">Spanish</p>
+                <p class="label">Currency:</p>
+                <p class="value">Balboa (PAB) & USD</p>
+                <p class="label">Time Zone:</p>
+                <p class="value">UTC−5</p>
+                <p class="label">Calling Code:</p>
+                <p class="value">+507</p>
+                <p class="label">Internet TLD:</p>
+                <p class="value">.pa</p>
+                </div>
+        </article>
+        <hr>
+        <article class="weather">
+            <h2 class="weathertitle">Weather</h2>
+            <div class="card">
+            <p class="label">Temperature:</p>
+            <p class="value">8 °C</p>
+            <p class="label">Wind Speed:</p>
+            <p class="value">10 km/h</p>
+            <p class="label">Wind Chill:</p>
+            <p class="value"><span id="windchill"></span></p>
+            </div>
+        </article>
+        </div>
+        
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> ⚽ Michael Virhuez ⚽ San Juan, Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

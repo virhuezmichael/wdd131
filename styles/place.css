@@ -1,0 +1,136 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: 'Josefin', sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* VARIABLES */
+:root {
+  --primary-color: #005aa7;     
+  --secondary-color: #ff0000;   
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --font-family: 'Josefin', sans-serif;
+  --h1-size: clamp(1rem, 6vw, 4rem);
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.weathertitle::after {
+  content:"";
+}
+
+/* MOBILE VIEW */
+header, footer {
+  background: linear-gradient(to bottom, var(--primary-color) 50%, var(--secondary-color) 50%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main, article, .hero, picture {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+article {
+  text-align: center;
+  padding: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #ccc;
+  margin: 1rem 0;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.label {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.value {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+
+/* WIDER VIEW */
+@media (min-width: 500px) {
+  .weathertitle::after {
+    content: " ⛅";
+    font-size: 1em;
+    margin-left: 0.5rem;
+  }
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero img {
+
+  }
+
+  .data,
+  .weather {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para legibilidad */
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: clamp(220px, 30%, 430px);
+  }
+
+  .data {
+    top: 1rem;
+    left: 4rem;
+  }
+
+  .weather {
+    bottom: 1rem;
+    right: 4rem;
+  }
+
+  hr {
+    display: none;
+  }
+}
