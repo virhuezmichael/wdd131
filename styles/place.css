@@ -93,6 +93,11 @@ hr {
     padding-left: 1rem;
 }
 
+.weathericon {
+  width: 35px;
+  height: 35px;
+}
+
 
 /* WIDER VIEW */
 @media (min-width: 500px) {
@@ -128,6 +133,10 @@ hr {
   .weather {
     bottom: 1rem;
     right: 4rem;
+  }
+
+  .weathericon {
+    display: none;
   }
 
   hr {
