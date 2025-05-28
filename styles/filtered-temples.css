@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefine', sans-serif;
+    overflow-x: hidden;
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(61, 55, 173);
+}
+
+header h1 {
+    color: white;
+}
+  .menu-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    text-align: right;
+    color: white;
+  }
+
+    #menu-toggle {
+    display: none;
+  }
+
+   #menu-toggle:checked + .menu-icon + ul.menu {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: 20px;
+    gap: 10px;
+    background-color:rgb(103, 109, 110);
+  }
+
+  nav ul.menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #999;
+    padding: 5px;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+main {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.temple-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5rem;
+    text-align: center;
+}
+
+figure {
+    background-color: white;
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    height: 160px;;
+}
+
+figcaption {
+    text-align: center;
+}
+
+ footer {
+    background-color: rgb(61, 55, 173);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
