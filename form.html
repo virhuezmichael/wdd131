@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Michael Virhuez">
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Michael Virhuez - Web Form - week05">
+    <link rel="stylesheet" href="styles/form.css" />
+    <script defer src="scripts/form.js"></script>
+    <title>WDD131 - Dynamic Web Fundamentals - Web Form - Michael Virhuez</title>
+</head>
+<body>
+
+<header>
+  <h1>Product Review Form</h1>
+</header>
+
+<form method="get" action="review.html" id="reviewForm">
+
+  <label for="productName">Product Name:</label>
+  <select id="productName" name="productName" required>
+    <option value="" disabled selected>Select a Product ...</option>
+  </select>
+
+  <fieldset>
+    <legend>Overall Rating:</legend>
+    <label><input type="radio" name="rating" id="rating1" value="1" required> &#9734; 1</label>
+    <label><input type="radio" name="rating" id="rating2" value="2"> &#9734; 2</label>
+    <label><input type="radio" name="rating" id="rating3" value="3"> &#9734; 3</label>
+    <label><input type="radio" name="rating" id="rating4" value="4"> &#9734; 4</label>
+    <label><input type="radio" name="rating" id="rating5" value="5"> &#9734; 5</label>
+  </fieldset>
+
+  <label for="installDate">Date of Installation:</label>
+  <input type="date" id="installDate" name="installDate" required />
+
+  <fieldset>
+    <legend>Useful Features (check all that apply):</legend>
+    <label><input type="checkbox" id="feature1" name="features" value="feature1"> Durability</label>
+    <label><input type="checkbox" id="feature2" name="features" value="feature2"> Performance</label>
+    <label><input type="checkbox" id="feature3" name="features" value="feature3"> Design</label>
+  </fieldset>
+
+  <label for="writtenReview">Written Review:</label>
+  <textarea id="writtenReview" name="writtenReview" rows="5"></textarea>
+
+  <label for="userName">User Name (optional):</label>
+  <input type="text" id="userName" name="userName" />
+
+  <input type="submit" value="Submit Review" />
+
+</form>
+
+<footer>
+  <p>© 2025 - Virhuez Michael</p>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
